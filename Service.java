@@ -24,6 +24,7 @@ public class Service {
 
         // USER INTRO 
         System.out.print("---------------------------------------\n");
+        System.out.println("PROJECT 2 Call Service - SHIH-HUNG YANG");
         System.out.print("Plan A (Budget) - Ulimited Call , No Text, No Data \nPlan B - Over 500mins Call, Ulimited Text, No Data \nPlan C - Over 500mins Call, 99 Text, No Data \nPlan D - Over 500mins Call, Over 100 Text, No Data \nPlan E - No Call, Ulimited Text, less than 3GB Data Usage \nPlan F - Ulimited Call, Ulimited Text, over 3GB Data Usage \nLet us help you choose! Enter your required Calling, Texting, Data usage. \n");
         System.out.print("---------------------------------------\n");
         
