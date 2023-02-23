@@ -37,23 +37,18 @@ public class Service {
          data = inputData;
 
         if (talk<500 && text==0 && data==0){
-            System.out.printf("Plan A is the right choice for you cost $%d \n", planA);
+            System.out.printf("Plan A cost $%d and is the right choice for you  \n", planA);
         } else if (talk<500 && text>=0 && data ==0){
-            System.out.printf("Plan B is the right choice for you cost $%d \n", planB);
+            System.out.printf("Plan B cost $%d and is the right choice for you \n", planB);
         } else if (talk>= 500 && text>=0 && data ==0) {
-            System.out.printf("Plan C is the right choice for you cost $%d \n", planC);
-        } else if (talk>= 500 && text<100 && data==0) {
-            System.out.printf("Plan C is the right choice for you cost $%d \n", planC);
-        } else if (talk>= 500 && text>=0 && data==0) {
-            System.out.printf("Plan C is the right choice for you cost $%d \n", planC);
-        } else (talk>= 500 && text>=0 && data==0) {
-            System.out.printf("Plan C is the right choice for you cost $%d \n", planC);
+            System.out.printf("Plan C cost $%d and is the right choice for you \n", planC);
+        } else if (talk>= 500 && text>=100 && data==0) {
+            System.out.printf("Plan D cost $%d and is the right choice for you \n", planD);
+        } else if (talk>= 0 && text>= 0 && data<=3) {
+            System.out.printf("Plan E cost $%d and is the right choice for you \n", planE);
+        } else (talk>=0 && text>=0 && data>=3) {
+            System.out.printf("Plan F cost $%d and is the right choice for you \n", planF);
         }
-
-
-         
-
-
 
     }
 }
