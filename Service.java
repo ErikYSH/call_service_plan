@@ -21,7 +21,7 @@ public class Service {
          * prompt user maximum Text message
          * prompt user maximum Data usage
          */
-        
+
         // USER INTRO 
         System.out.print("---------------------------------------\n");
         System.out.print("Plan A (Budget) - Ulimited Call , No Text, No Data \nPlan B - Over 500mins Call, Ulimited Text, No Data \nPlan C - Over 500mins Call, 99 Text, No Data \nPlan D - Over 500mins Call, Over 100 Text, No Data \nPlan E - No Call, Ulimited Text, less than 3GB Data Usage \nPlan F - Ulimited Call, Ulimited Text, over 3GB Data Usage \nLet us help you choose! Enter your required Calling, Texting, Data usage. \n");
@@ -44,17 +44,17 @@ public class Service {
 
         // CONDITIONS
         if (talk<500 && text==0 && data==0){
-            System.out.printf("Plan A cost $%d and is the right choice for you  \n", planA);
+            System.out.printf("Plan A cost $%d/month and is the right choice for you  \n", planA);
         } else if (talk<500 && text>=0 && data ==0){
-            System.out.printf("Plan B cost $%d and is the right choice for you \n", planB);
+            System.out.printf("Plan B cost $%d/month and is the right choice for you \n", planB);
         } else if (talk>= 500 && text<100 && data ==0) {
-            System.out.printf("Plan C cost $%d and is the right choice for you \n", planC);
+            System.out.printf("Plan C cost $%d/month and is the right choice for you \n", planC);
         } else if (talk>= 500 && text>=100 && data==0) {
-            System.out.printf("Plan D cost $%d and is the right choice for you \n", planD);
-        } else if (talk>= 0 && text>= 0 && data<=3) {
-            System.out.printf("Plan E cost $%d and is the right choice for you \n", planE);
+            System.out.printf("Plan D cost $%d/month and is the right choice for you \n", planD);
+        } else if (talk>= 0 && text>= 0 && data<3) {
+            System.out.printf("Plan E cost $%d/month and is the right choice for you \n", planE);
         } else if (talk>=0 && text>=0 && data>=3) {
-            System.out.printf("Plan F cost $%d and is the right choice for you \n", planF);
+            System.out.printf("Plan F cost $%d/month and is the right choice for you \n", planF);
         }
 
     }
