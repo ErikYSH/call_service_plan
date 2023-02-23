@@ -22,6 +22,8 @@ public class Service {
          * prompt user maximum Data usage
          */
 
+        System.out.print("Plan A (Budget) - Ulimited Talk , No Text, No Data \n Plan B - Over 500mins Talk, Ulimited Text, No Data \n Plan C - Over 500mins Talk, 99 Text, No Data \n");
+
          Scanner in = new Scanner(System.in);
 
          System.out.println("Enter maximum minutes for talk data (0-1000 minutes):");
