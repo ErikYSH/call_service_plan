@@ -21,10 +21,13 @@ public class Service {
          * prompt user maximum Text message
          * prompt user maximum Data usage
          */
+        
+        // USER INTRO 
         System.out.print("---------------------------------------\n");
         System.out.print("Plan A (Budget) - Ulimited Call , No Text, No Data \nPlan B - Over 500mins Call, Ulimited Text, No Data \nPlan C - Over 500mins Call, 99 Text, No Data \nPlan D - Over 500mins Call, Over 100 Text, No Data \nPlan E - No Call, Ulimited Text, less than 3GB Data Usage \nPlan F - Ulimited Call, Ulimited Text, over 3GB Data Usage \nLet us help you choose! Enter your required Calling, Texting, Data usage. \n");
         System.out.print("---------------------------------------\n");
         
+        // USER INPUT
         Scanner in = new Scanner(System.in);
         
          System.out.println("Enter maximum minutes for calling (0-1000 minutes):");
@@ -39,6 +42,7 @@ public class Service {
          int inputData = in.nextInt();
          data = inputData;
 
+        // CONDITIONS
         if (talk<500 && text==0 && data==0){
             System.out.printf("Plan A cost $%d and is the right choice for you  \n", planA);
         } else if (talk<500 && text>=0 && data ==0){
