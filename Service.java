@@ -40,7 +40,7 @@ public class Service {
             System.out.printf("Plan A cost $%d and is the right choice for you  \n", planA);
         } else if (talk<500 && text>=0 && data ==0){
             System.out.printf("Plan B cost $%d and is the right choice for you \n", planB);
-        } else if (talk>= 500 && text>=0 && data ==0) {
+        } else if (talk>= 500 && text<100 && data ==0) {
             System.out.printf("Plan C cost $%d and is the right choice for you \n", planC);
         } else if (talk>= 500 && text>=100 && data==0) {
             System.out.printf("Plan D cost $%d and is the right choice for you \n", planD);
