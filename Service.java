@@ -22,11 +22,11 @@ public class Service {
          * prompt user maximum Data usage
          */
 
-        System.out.print("Plan A (Budget) - Ulimited Talk , No Text, No Data \n Plan B - Over 500mins Talk, Ulimited Text, No Data \n Plan C - Over 500mins Talk, 99 Text, No Data \n");
+        System.out.print("Plan A (Budget) - Ulimited Call , No Text, No Data \nPlan B - Over 500mins Call, Ulimited Text, No Data \nPlan C - Over 500mins Call, 99 Text, No Data \nPlan D - Over 500mins Call, Over 100 Text, No Data \nPlan E - No Call, Ulimited Text, less than 3GB Data Usage \nPlan F - Ulimited Call, Ulimited Text, over 3GB Data Usage \nLet us help you choose! Enter your required Calling, Texting, Data usage.");
 
          Scanner in = new Scanner(System.in);
 
-         System.out.println("Enter maximum minutes for talk data (0-1000 minutes):");
+         System.out.println("Enter maximum minutes for calling (0-1000 minutes):");
          int inputTalk = in.nextInt();
          talk = inputTalk;
 
