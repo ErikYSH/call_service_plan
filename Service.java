@@ -46,7 +46,7 @@ public class Service {
             System.out.printf("Plan D cost $%d and is the right choice for you \n", planD);
         } else if (talk>= 0 && text>= 0 && data<=3) {
             System.out.printf("Plan E cost $%d and is the right choice for you \n", planE);
-        } else (talk>=0 && text>=0 && data>=3) {
+        } else if (talk>=0 && text>=0 && data>=3) {
             System.out.printf("Plan F cost $%d and is the right choice for you \n", planF);
         }
 
